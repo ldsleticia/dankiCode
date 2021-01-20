@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        var animal = {}; /* aqui estou declarando que essa var é um objeto */
+
+        animal.nome = []; /* aqui estou declarando que a propriedade nome é um objeto vazio */
+        animal.nome[0] = "Joaninha";
+        animal.nome[1] = "Amarula";
+        animal.peso = 24;
+        animal.idade = 5;
+
+        console.log(
+          animal.nome[0]
+        ); /* nesse caso o console.log só funciona dentro da função porque a var está no escopo da função e nem globalmente */
+        console.log(animal.peso);
+      };
+    </script>
+  </body>
+</html>
